@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:BankApp.Controls"
+             x:Class="BankApp.Views.TransferPage"
+             Title="Transfer Form"
+             BackgroundColor="#E8E6FE">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout Margin="10,30,10,0" Grid.Row="0">
+            <Label Text="Account to debit"
+                       FontFamily="Poppins-Light"
+                       FontSize="Subtitle"
+                       Margin="10,0"
+                       TextColor="Black"/>
+
+            <Frame CornerRadius="10"
+                       Margin="10,2"
+                       Padding="20,0"
+                       HeightRequest="50">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Picker TextColor="Blue" Grid.Column="0" FontSize="Small" Title="Select account">
+                        <Picker.Items>
+                            <x:String>NGN Account</x:String>
+                            <x:String>USD Account</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <StackLayout Grid.Column="1">
+                        <Image Source="downArrow.png" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" Margin="0,20"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="10,10,10,0" Grid.Row="1">
+            <Label Text="Select bank"
+                       FontFamily="Poppins-Light"
+                       FontSize="Subtitle"
+                       Margin="10,0"
+                       TextColor="Black"/>
+
+            <Frame CornerRadius="10"
+                       Margin="10,2"
+                       Padding="20,0"
+                       HeightRequest="50">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Picker TextColor="Blue" Grid.Column="0" FontSize="Small" Title="Select bank">
+                        <Picker.Items>
+                            <x:String>NGN Account</x:String>
+                            <x:String>USD Account</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <StackLayout Grid.Column="1">
+                        <Image Source="downArrow.png" HeightRequest="10" WidthRequest="10" VerticalOptions="Center" Margin="0,20"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="10,10,10,0" Grid.Row="2">
+            <Label Text="To account"
+                       FontFamily="Poppins-Light"
+                       FontSize="Subtitle"
+                       Margin="10,0"
+                       TextColor="Black"/>
+
+            <Frame CornerRadius="10"
+                       Margin="10,2"
+                       Padding="20,0"
+                       HeightRequest="50">
+                <controls:CustomEntry 
+                                Grid.Column="0"
+                                VerticalOptions="CenterAndExpand"
+                                FontFamily="Poppins-Light"
+                                FontSize="Small"
+                                Keyboard="Numeric"
+                                Placeholder="Enter Account Number"
+                                TextColor="Black"
+                                />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="10,10,10,0" Grid.Row="3">
+            <Label Text="Beneficiary"
+                       FontFamily="Poppins-Light"
+                       FontSize="Subtitle"
+                       Margin="10,0"
+                       TextColor="Black"/>
+
+            <Frame CornerRadius="10"
+                       Margin="10,2"
+                       Padding="20,0"
+                       HeightRequest="50">
+                <controls:CustomEntry 
+                                Grid.Column="0"
+                                VerticalOptions="CenterAndExpand"
+                                FontFamily="Poppins-Light"
+                                FontSize="Small"
+                                TextColor="Black"
+                                />
+            </Frame>
+        </StackLayout>
+
+        <Grid Grid.Row="4" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="0">
+                <Label Text="Amount" TextColor="Black"/>
+                <Frame HeightRequest="50" Padding="10,0" CornerRadius="5">
+                    <controls:CustomEntry 
+                                Grid.Column="0"
+                                VerticalOptions="CenterAndExpand"
+                                FontFamily="Poppins-Light"
+                                FontSize="Small"
+                                Placeholder="Enter Amount"
+                                TextColor="Black"
+                                />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Margin="10,0,0,0">
+                <Label Text="Rate" TextColor="Black"/>
+                <Frame HeightRequest="50" Padding="10,0" CornerRadius="5" BackgroundColor="#D7D5EB">
+                    <controls:CustomEntry 
+                                Grid.Column="0"
+                                VerticalOptions="CenterAndExpand"
+                                FontFamily="Poppins-Light"
+                                FontSize="Small"
+                                Keyboard="Plain"
+                                Placeholder="620"
+                                TextColor="Black"
+                                />
+                </Frame>
+            </StackLayout>
+        </Grid>
+
+        <StackLayout Margin="10,0,10,0" Grid.Row="5">
+            <Label Text="Amount to transfer in NGN"
+                       FontFamily="Poppins-Light"
+                       FontSize="Subtitle"
+                       Margin="10,0"
+                       TextColor="Black"/>
+
+            <Frame CornerRadius="5"
+                       Margin="10,2"
+                       Padding="20,0"
+                       BackgroundColor="#D7D5EB"
+                       HeightRequest="50">
+                <controls:CustomEntry 
+                                Grid.Column="0"
+                                VerticalOptions="CenterAndExpand"
+                                FontFamily="Poppins-Light"
+                                FontSize="Small"
+                                Keyboard="Email"
+                                Text="{Binding Email}"
+                                TextColor="Black"
+                                />
+            </Frame>
+        </StackLayout>
+
+        <Button Text="Continue" BackgroundColor="#1A00D4" TextColor="White" Margin="20, 20" Grid.Row="6" Clicked="to_success" CornerRadius="5"/>
+
+    </Grid>
+
+
+    
+</ContentPage>
