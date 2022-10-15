@@ -16,5 +16,10 @@ namespace BankApp.Views
         {
             InitializeComponent();
         }
+
+        private void Fund_success(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DashBoardPage());
+        }
     }
 }

@@ -43,7 +43,7 @@
                                 <ColumnDefinition Width="7*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                                <Picker TextColor="Blue" Grid.Column="0" FontSize="Small">
+                            <Picker TextColor="Blue" Grid.Column="0" FontSize="Small" Title="Account">
                                     <Picker.Items>
                                         <x:String>NGN Account</x:String>
                                         <x:String>USD Account</x:String>

@@ -18,7 +18,7 @@
         </StackLayout>
         <Label Text="Account Funded Successfully" Grid.Row="1" HorizontalTextAlignment="Center" TextColor="Black" FontSize="Subtitle"/>
 
-        <Button Text="OK" BackgroundColor="#1A00D4" TextColor="White" Margin="10,10,10,10" Grid.Row="2" CornerRadius="5"/>
+        <Button Text="OK" BackgroundColor="#1A00D4" TextColor="White" Margin="10,10,10,10" Grid.Row="2" CornerRadius="5" Clicked="Fund_success"/>
 
     </Grid>
 </ContentPage>

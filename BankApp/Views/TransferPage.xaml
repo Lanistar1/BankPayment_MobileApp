@@ -22,7 +22,7 @@
                        Margin="10,0"
                        TextColor="Black"/>
 
-            <Frame CornerRadius="10"
+            <Frame CornerRadius="5"
                        Margin="10,2"
                        Padding="20,0"
                        HeightRequest="50">
@@ -52,7 +52,7 @@
                        Margin="10,0"
                        TextColor="Black"/>
 
-            <Frame CornerRadius="10"
+            <Frame CornerRadius="5"
                        Margin="10,2"
                        Padding="20,0"
                        HeightRequest="50">
@@ -82,7 +82,7 @@
                        Margin="10,0"
                        TextColor="Black"/>
 
-            <Frame CornerRadius="10"
+            <Frame CornerRadius="5"
                        Margin="10,2"
                        Padding="20,0"
                        HeightRequest="50">
@@ -93,7 +93,7 @@
                                 FontSize="Small"
                                 Keyboard="Numeric"
                                 Placeholder="Enter Account Number"
-                                TextColor="Black"
+                                TextColor="Blue"
                                 />
             </Frame>
         </StackLayout>
@@ -105,7 +105,7 @@
                        Margin="10,0"
                        TextColor="Black"/>
 
-            <Frame CornerRadius="10"
+            <Frame CornerRadius="5"
                        Margin="10,2"
                        Padding="20,0"
                        HeightRequest="50">
@@ -114,7 +114,7 @@
                                 VerticalOptions="CenterAndExpand"
                                 FontFamily="Poppins-Light"
                                 FontSize="Small"
-                                TextColor="Black"
+                                TextColor="Blue"
                                 />
             </Frame>
         </StackLayout>
@@ -133,8 +133,9 @@
                                 VerticalOptions="CenterAndExpand"
                                 FontFamily="Poppins-Light"
                                 FontSize="Small"
+                                Keyboard="Numeric"
                                 Placeholder="Enter Amount"
-                                TextColor="Black"
+                                TextColor="Blue"
                                 />
                 </Frame>
             </StackLayout>
@@ -147,9 +148,8 @@
                                 VerticalOptions="CenterAndExpand"
                                 FontFamily="Poppins-Light"
                                 FontSize="Small"
-                                Keyboard="Plain"
                                 Placeholder="620"
-                                TextColor="Black"
+                                TextColor="Blue"
                                 />
                 </Frame>
             </StackLayout>
@@ -172,9 +172,8 @@
                                 VerticalOptions="CenterAndExpand"
                                 FontFamily="Poppins-Light"
                                 FontSize="Small"
-                                Keyboard="Email"
-                                Text="{Binding Email}"
-                                TextColor="Black"
+                                Keyboard="Numeric"
+                                TextColor="Blue"
                                 />
             </Frame>
         </StackLayout>
