@@ -26,10 +26,11 @@
                     </FlexLayout>
                     
                     <!--<Label Text="NGN 15 000" TextColor="White" FontSize="Medium" FontAttributes="Bold"/>-->
-
+                    
                     <Grid>
                         <Label Text="NGN 15 000" TextColor="White" FontSize="Medium" FontAttributes="Bold" IsVisible="{Binding ShowAmount}"/>
                         <Label Text="- - - - - " TextColor="White" FontSize="Medium" FontAttributes="Bold" IsVisible="{Binding HideAmount}"/>
+                        <!--<Label Text="USD 500" TextColor="White" FontSize="Medium" FontAttributes="Bold" IsVisible="{Binding USDAmount}"/>-->
                     </Grid>
                   
                 </StackLayout>
@@ -43,8 +44,8 @@
                                 <ColumnDefinition Width="7*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Picker TextColor="Blue" Grid.Column="0" FontSize="Small" Title="Account">
-                                    <Picker.Items>
+                            <Picker x:Name="transTypePicker" TextColor="Blue" Grid.Column="0" FontSize="Small" Title="Account Type" SelectedIndexChanged="transTypePicker_SelectedIndexChanged">
+                                    <Picker.Items> 
                                         <x:String>NGN Account</x:String>
                                         <x:String>USD Account</x:String>
                                     </Picker.Items>

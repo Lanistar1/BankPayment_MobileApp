@@ -96,6 +96,6 @@
             </Frame>
         </StackLayout>
 
-        <Button Text="Fund Wallet" TextColor="White" BackgroundColor="#1A00D4" Grid.Row="4" Clicked="created_wallet" CornerRadius="5"/>
+        <Button Text="Create Wallet" TextColor="White" BackgroundColor="#1A00D4" Grid.Row="4" Clicked="created_wallet" CornerRadius="5"/>
     </Grid>
 </ContentPage>

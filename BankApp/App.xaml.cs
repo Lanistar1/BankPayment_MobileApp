@@ -12,7 +12,7 @@ namespace BankApp
             InitializeComponent();
             MainPage = new NavigationPage(new CreateWalletPage())
             {
-                BarBackgroundColor = Color.Blue
+                BarBackgroundColor = Color.MediumBlue
             };
             //MainPage = new MainPage();
         }
